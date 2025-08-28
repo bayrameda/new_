@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Researcher Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        .header a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .content {
+            padding-top: 60px; /* Adjust for fixed header */
+        }
+        .section {
+            padding: 40px;
+        }
+        .white-bg {
+            background-color: #f4f4f4;
+        }
+        .gray-bg {
+            background-color: #e2e2e2;
+        }
+        .home-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .profile-left {
+            text-align: center;
+            margin: 20px;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #333;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #333;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .bio-right {
+            max-width: 600px;
+            margin: 20px;
+        }
+        .bio-right h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .bullet-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .bullet-list li:before {
+            content: "•";
+            color: #007bff;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .bullet-list.education li:before {
+            content: "🎓";
+            font-size: 1.2em;
+            color: #000;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .paper-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .paper-links a {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .patent-image {
+            max-width: 200px;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a href="#home">Home</a>
+        <a href="#essays">Essays</a>
+        <a href="#papers">Papers</a>
+        <a href="#patents">Patents</a>
+    </div>
+
+    <div class="content">
+
+        <div id="home" class="section white-bg">
+            <div class="home-section">
+                <div class="profile-left">
+                    <img src="your-photo.jpg" alt="Your Name" class="profile-photo">
+                    <h3>Your Full Name</h3>
+                    <div class="social-icons">
+                        <a href="mailto:your_email@example.com" title="Email">✉️</a>
+                        <a href="https://scholar.google.com/citations?user=your_id" title="Google Scholar">🎓</a>
+                        <a href="https://github.com/username" title="GitHub">💻</a>
+                        <a href="https://linkedin.com/in/your_profile" title="LinkedIn">💼</a>
+                        <a href="cv/CV_bayram_27Aug25.pdf" title="CV">📄</a>
+                    </div>
+                </div>
+                <div class="bio-right">
+                    <h2>About</h2>
+                    <p>This is a placeholder for your bio. You can add external links here, for example, a link to <a href="https://www.youruniversity.edu" target="_blank">your university's website</a> or your <a href="https://www.researchgate.net/" target="_blank">ResearchGate profile</a>.</p>
+                    
+                    <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                        <div style="flex: 1; margin-right: 20px;">
+                            <h3>Interests</h3>
+                            <ul class="bullet-list">
+                                <li>Research Interest 1</li>
+                                <li>Research Interest 2</li>
+                                <li>Research Interest 3</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3>Education</h3>
+                            <ul class="bullet-list education">
+                                <li>PhD, University Name, Year</li>
+                                <li>M.S., University Name, Year</li>
+                                <li>B.S., University Name, Year</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        ---
+
+        <div id="essays" class="section gray-bg">
+            <h2 class="section-title">Essays on Cognitive Science</h2>
+            <ul>
+                <li><strong>Essay Title 1</strong> (Date) - <a href="essay1.pdf" target="_blank">Read PDF</a></li>
+                <li><strong>Essay Title 2</strong> (Date) - <a href="essay2.pdf" target="_blank">Read PDF</a></li>
+                <li><strong>Essay Title 3</strong> (Date) - <a href="essay3.pdf" target="_blank">Read PDF</a></li>
+            </ul>
+        </div>
+
+        ---
+
+        <div id="papers" class="section white-bg">
+            <h2 class="section-title">Papers in Machine Learning</h2>
+            <div class="paper-box">
+                <p>Citation for Paper 1. Authors, "Paper Title," <em>Journal/Conference</em>, Year.</p>
+                <div class="paper-links">
+                    <a href="https://external.link/to/pdf" target="_blank">PDF</a>
+                    <a href="https://external.link/to/code" target="_blank">Code</a>
+                    <a href="https://external.link/to/poster" target="_blank">Poster</a>
+                    <a href="https://external.link/to/video" target="_blank">Video</a>
+                </div>
+            </div>
+            <div class="paper-box">
+                <p>Citation for Paper 2. Authors, "Paper Title," <em>Journal/Conference</em>, Year.</p>
+                <div class="paper-links">
+                    <a href="https://external.link/to/pdf" target="_blank">PDF</a>
+                    <a href="https://external.link/to/code" target="_blank">Code</a>
+                    <a href="https://external.link/to/poster" target="_blank">Poster</a>
+                    <a href="https://external.link/to/video" target="_blank">Video</a>
+                </div>
+            </div>
+        </div>
+
+        ---
+
+        <div id="patents" class="section gray-bg">
+            <h2 class="section-title">Patents</h2>
+            <div class="paper-box">
+                <p>Citation for Patent 1. Inventors, "Patent Title," Patent No. XXXXXXX, Date.</p>
+                <img src="patent1-image.png" alt="Patent 1" class="patent-image">
+            </div>
+            <div class="paper-box">
+                <p>Citation for Patent 2. Inventors, "Patent Title," Patent No. XXXXXXX, Date.</p>
+                <img src="patent2-image.png" alt="Patent 2" class="patent-image">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
